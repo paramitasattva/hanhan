@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text-based RPG</title>
+</head>
+<body>
+  <h1>欢迎来到冒险之旅！</h1>
+  <p>你是一个年轻的冒险家，刚刚来到了一个神秘的大陆。</p>
+
+  <h2>创建你的角色</h2>
+  <form>
+    <label for="characterName">角色名字：</label>
+    <input type="text" id="characterName" name="characterName" required><br><br>
+    <label for="characterClass">选择你的职业：</label>
+    <select id="characterClass" name="characterClass">
+      <option value="战士">战士</option>
+      <option value="法师">法师</option>
+      <option value="盗贼">盗贼</option>
+    </select><br><br>
+    <input type="submit" value="开始冒险">
+  </form>
+
+  <h2>当前任务</h2>
+  <p>任务：拯救村庄</p>
+  <p>描述：村庄被怪物入侵，你需要前往村庄并清除怪物。</p>
+  <p>目标：前往村庄、击败怪物首领、报告村庄领袖。</p>
+
+  <h2>当前场景</h2>
+  <p>你来到了一个森林。</p>
+  <p>你可以选择做以下事情：</p>
+  <ul>
+    <li><a href="#" onclick="exploreForest()">探索森林</a></li>
+    <li><a href="#" onclick="leaveForest()">离开森林</a></li>
+  </ul>
+
+  <script>
+    function exploreForest() {
+      alert("你在森林中发现了一只野狼！");
+      // 可以在这里处理战斗逻辑
+    }
+
+    function leaveForest() {
+      alert("你离开了森林。");
+    }
+  </script>
+</body>
+</html>
